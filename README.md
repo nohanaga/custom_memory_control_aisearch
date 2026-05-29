@@ -250,25 +250,25 @@ There is certainly more depth to explore from a cognitive science perspective, b
 
 The formula combines three independent factors.
 
-$$
-\text{retention}\_\text{score} = \text{decay} \times \text{importance}\_\text{anchor} + \text{access}\_\text{rehearsal}
-$$
+```math
+\text{retention\_score} = \text{decay} \times \text{importance\_anchor} + \text{access\_rehearsal}
+```
 
 The first product represents the basic remaining value determined by time and importance. The second additive term represents reinforcement based on actual usage.
 
 Definitions of each component:
 
-$$
-\text{decay} = 0.5^{\frac{\text{age}\_\text{days}}{\text{half}\_\text{life}\_\text{days}}}
-$$
+```math
+\text{decay} = 0.5^{\frac{\text{age\_days}}{\text{half\_life\_days}}}
+```
 
-$$
-\text{importance}\_\text{anchor} = 0.35 + 0.65 \times \text{importance}
-$$
+```math
+\text{importance\_anchor} = 0.35 + 0.65 \times \text{importance}
+```
 
-$$
-\text{access}\_\text{rehearsal} = \min(\text{access}\_\text{count} \times 0.04,\ 0.35)
-$$
+```math
+\text{access\_rehearsal} = \min(\text{access\_count} \times 0.04,\ 0.35)
+```
 
 In practical terms:
 
